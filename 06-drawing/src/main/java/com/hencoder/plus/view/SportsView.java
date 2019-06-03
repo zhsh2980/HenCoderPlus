@@ -6,7 +6,9 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.Typeface;
+
 import androidx.annotation.Nullable;
+
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -55,5 +57,16 @@ public class SportsView extends View {
 //        paint.getTextBounds("abab", 0, "abab".length(), rect);
         float offset = (fontMetrics.ascent + fontMetrics.descent) / 2;
         canvas.drawText("abab", getWidth() / 2, getHeight() / 2 - offset, paint);
+
+        paint.setTextSize(Utils.dp2px(120));
+        paint.getTextBounds("aaaa", 0, "aaaa".length(), rect);
+        paint.setTextAlign(Paint.Align.LEFT);
+        canvas.drawText("aaaa", -rect.left, rect.height(), paint);
+
+
+        paint.setTextSize(Utils.dp2px(30));
+//        paint.getTextBounds("bbbb", 0, "bbbb".length(), rect);
+//        paint.setTextAlign(Paint.Align.LEFT);
+        canvas.drawText("bbbb", -rect.left, rect.height() , paint);
     }
 }

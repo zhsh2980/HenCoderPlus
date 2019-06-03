@@ -80,5 +80,7 @@ public class TestView extends View {
                 90 + ANGLE / 2, 360 - ANGLE, false, paint);
         paint.setPathEffect(null);
 
+//        canvas.drawLine(getWidth()/2 , getHeight()/2 , );
+
     }
 }

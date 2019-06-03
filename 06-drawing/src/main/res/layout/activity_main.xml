@@ -4,9 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--<com.hencoder.plus.view.TestView-->
     <!--<com.hencoder.plus.view.ImageTextView-->
-    <com.hencoder.plus.view.TestView
+    <!--<com.hencoder.plus.view.AvatarView-->
+    <com.hencoder.plus.view.SportsView
         android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:layout_centerInParent="true" />
+        android:layout_height="400dp" />
 </RelativeLayout>
